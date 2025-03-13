@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS - Stile Pagine 01 - Basi CSS</title>
+
+    <!-- Aggiungo del CSS con un tag STYLE -->
+     <!-- <style>
+        body {
+            background-color: #323232;
+        }
+
+        h1 {
+            color: orange;
+        }
+
+        p {
+            color: white;
+        }
+    </style> -->
+
+    <!-- Collego a questa pagina HTML un foglio di stile esterno da cui prendere tutte le regole CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--
+        Se l'HTML serve a creare la struttura di una pagina web, il CSS si occupa di renderla presentabile.
+        Per farlo utilizziamo un foglio di stile (stylesheet), ovvero un documento che contiene una lista di regole CSS che assegnano uno stile ai nostri elementi HTML.
+
+        Un set di regole CSS ha questo aspetto:
+
+        div {
+            color: red;
+            margin: 20px;
+        }
+
+        li {
+            font-weight: bold;
+        }
+
+        Ogni set è composto da:
+            - Selettore -> permette di definire quali elementi devono essere stilizzati (es.: div o li).
+            - Parentesi graffe -> contengono tutte le regole di stile che gli elementi selezionati devono avere.
+            - Dichiarazione -> è una coppia chiave/valore che definisce come debba essere stilizzato l'elemento selezionato. Composta da:
+                - Proprietà: rappresenta l'aspetto che si desidera modificare
+                - Valore: indica come deve essere modificata la proprietà. I valori possono essere colori, dimensioni, unità di misura, ecc.
+
+        Ci sono 3 modi per aggiungere dello stile all'HTML:
+            - Con un tag STYLE direttamente nell'HTML (sconsigliato)
+            - Con un foglio di stile separato
+            - Direttamente sull'elemento interessato con la proprietà style (sconsigliato)
+    -->
+
+    <h1>Basi CSS</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa voluptatum, repellendus recusandae nesciunt dicta ipsum ipsa similique labore minus ratione vel magni eius et animi nemo rem quis? Totam!
+    </p>
+
+    <h2>Heading 2</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dicta reprehenderit provident omnis suscipit. Architecto reprehenderit maiores quaerat voluptatem culpa? Tempora nemo suscipit odio ipsam repudiandae ducimus laboriosam esse porro.
+    </p>
+
+    <ul>
+        <li>Link</li>
+        <li>Zelda</li>
+        <li>Ganondorf</li>
+    </ul>
+    
+</body>
+</html>

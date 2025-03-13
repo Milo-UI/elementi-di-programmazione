@@ -1,0 +1,21 @@
+body {
+    /* permette di scegliere la font family del testo */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    /* colora il testo */
+    color: orange;
+
+    /* colora lo sfondo */
+    background-color: slategray;
+
+    /* determina la grandezza del font */
+    font-size: 60px;
+    
+    /* assegna una decorazione al testo e ha dei valori prestabiliti */
+    text-decoration: underline;
+
+    /* permette di allineare il testo */
+    text-align: center;
+}

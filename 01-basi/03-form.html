@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS - Basi 03 - Form HTML</title>
+</head>
+<body>
+
+    <!--
+        I form vengono utilizzati per ottenere informazioni dall'utente, che sia per permettergli di fare il login o la registrazione al sito, o per contattare i proprietari del sito, o un form di ricerca dove possiamo chiedere all'utente i parametri della sua ricerca.
+
+        per questo un form è composto da una serie di campi di input nei quali l'utente può inserire le informazioni. In base al tipo di informazione richiesta, servirà un tipo di campo di input specifico che stabiliremo tramite l'attributo type.
+    -->
+
+    <h1>Form HTML</h1>
+
+    <!-- L'attributo action nel tag FORM serve a dire al browser cosa fare una volta che l'utente invia le informazioni -->
+    <form>
+
+        <!--
+            I tag INPUT sono autoconclusivi e hanno sempre l'attributo type per indicare il genere di dato che ci aspettiamo dall'utente. Per esempio text, che è il più generico e si aspetta una stringa di testo di qualsiasi tipo.
+
+            Di solito si assegna un id per poter legare un input alla sua etichetta.
+            È buona norma utilizzare i tag LABEL per etichettare i campi di input, così che il browser e soprattutto l'utente sappiano che tipo di dato ci aspettiamo venga inserito. Nell' attributo for della LABEL si inserisce l'id dell'input che descrive.
+
+            L'attributo name ha uno scopo simile all'id, ma viene anche utilizzato nel momento in cui il form viene inviato e un file php, per esempio, prende questi dati e li processa riconoscendoli grazie all'attributo name.
+            In HTML il name di un input serve anche a raggruppare parti di un form. Un esempio possono essere le checkbox o i radio button.
+            
+            https://www.w3schools.com/html/html_form_input_types.asp
+        -->
+        
+        <label for="username">User:</label> <br>
+        <input type="text" id="username" name="username" placeholder="Scegli uno username" required> <br><br>
+
+        <label for="email">Email:</label> <br>
+        <input type="email" name="email" id="email" placeholder="Inserisci la tua e-mail" required> <br><br>
+
+        <label for="password">Password:</label> <br>
+        <input type="password" name="password" id="password" placeholder="Crea la tua password" required> <br><br>
+
+        <span>Seleziona il tuo gender:</span> <br>
+        <input type="radio" name="gender" id="opzione1" value="uomo">
+        <label for="opzione1">Uomo</label>
+        <input type="radio" name="gender" id="opzione2" value="donna">
+        <label for="opzione2">Donna</label>
+        <input type="radio" name="gender" id="opzione3" value="altro">
+        <label for="opzione3">Altro</label>
+
+        <br><br>
+
+        <label for="provincia">Provincia</label> <br>
+        <select name="provincia" id="provincia">
+            <option>Scegli la tua provincia</option>
+            <option value="to">TO</option>
+            <option value="mi">MI</option>
+            <option value="roma">Roma</option>
+        </select>
+
+        <br><br>
+
+        <label for="bio">Dicci qualcosa sulla tua vita</label> <br>
+        <textarea name="bio" id="bio" cols="60" rows="10" placeholder="Parlaci di te..."></textarea>
+
+        <br><br>
+
+        <input type="reset" value="Cancella tutti i campi">
+        <input type="submit" value="Invia il form e registrati">
+    </form>
+    
+</body>
+</html>
