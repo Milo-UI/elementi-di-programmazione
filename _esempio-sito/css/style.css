@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+a {
+   margin: 0;
+   padding: 0;
+   font-family: "Arial", sans-serif;
+}
+
+body {
+    padding-top: 105px;
+}
+
+header {
+    background-color: #f63232;
+    padding: 20px;
+    text-align: center;
+    /* vogliamo la header fissa in cima anche mentre scrolliamo */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header h1 {
+    color: #fff;
+    border: 8px solid #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 36px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    /* Facciamo in modo che l'immagine sia larga al massimo quanto il suo contenitore */
+    max-width: 100%;
+    display: block;
+}
+
+.welcome {
+    position: absolute;
+    /* Non possiamo usare valori assoluti espressi per esempio in pixel, altrimenti l'elemento non si comporta come vorremmo in tutte le risoluzioni */
+    top: 30%;
+    left: 0;
+
+    color: white;
+    background-color: #feb614;
+    padding: 30px;
+}
+
+.banner h2 {
+    font-size: 74px;
+}
+
+.banner h2 span {
+    /* l'unità di misura em prende il valore che l'elemento eredita dal genitore e lo moltiplica per il valore che gli assegniamo */
+    font-size: 1.3em;
+}
+
+.main-nav {
+    /* vogliamo che una volta raggiunto il nav con lo scroll della pagina, questo si appiccichi all'header e segua lo scrolling */
+    position: sticky;
+    top: 105px;
+
+    background-color: #e6e6e6;
+    padding: 20px;
+}
+
+.main-nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+.main-nav li {
+    list-style-type: none;
+    display: inline-block;
+    width: 25%;
+    font-size: 24px;
+    text-align: center;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+.main-nav li a.join {
+    color: #f63232;
+}
+
+main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+article h2 {
+    color: #f63232;
+    font-size: 48px;
+}
+
+article p {
+    line-height: 1.6em;
+    color: #4b4b4b;
+}

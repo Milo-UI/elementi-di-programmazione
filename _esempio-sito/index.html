@@ -9,20 +9,24 @@
 </head>
 <body>
     
-    <div>
+    <!-- HEADER contiene il titolo della pagina, il menù di navigazione e tutto ciò che viene ripetuto all'inizio di ogni pagina del sito -->
+    <header>
         <h1>Marioclub</h1>
-    </div>
+    </header>
 
-    <div>
-        <img src="" alt="Banner di benvenuto in Marioclub">
+    <section class="banner">
+        <img src="img/banner.png" alt="Banner di benvenuto in Marioclub">
 
-        <h2>Benvenuti nel Marioclub</h2>
-    </div>
+        <div class="welcome">
+            <h2>Benvenuti nel <br> <span>Marioclub</span></h2>
+        </div>
+    </section>
 
-    <div>
+    <!-- NAV contiene ciò che permette all'utente di navigare il sito o la pagina -->
+    <nav class="main-nav">
         <ul>
             <li>
-                <a href="#!">Unisciti al Club</a>
+                <a href="#!" class="join">Unisciti al Club</a>
             </li>
             <li>
                 <a href="#!">Ultime Notizie</a>
@@ -34,28 +38,29 @@
                 <a href="#!">Contatti</a>
             </li>
         </ul>
-    </div>
+    </nav>
 
-    <div>
-        <div>
-            <h2>It'a a me Mario!</h2>
+    <!-- MAIN contiene il contenuto principale della pagina e unico a essa -->
+    <main>
+        <article>
+            <h2>It's a me Mario!</h2>
 
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur alias atque architecto, dolorum minima placeat, animi aperiam exercitationem id assumenda quibusdam officia. Cumque labore quas nulla mollitia explicabo commodi. Placeat perferendis quos eligendi cumque veniam assumenda sapiente sequi officiis voluptates esse molestiae, dolore itaque nisi nemo, provident sint fuga aspernatur id expedita saepe non? Quam ipsam dolorem, consectetur recusandae nemo alias minima eveniet maiores odit debitis eos rem hic libero unde sit reprehenderit porro reiciendis distinctio earum, atque dolorum quia minus voluptates dicta! Nihil quos nulla dicta blanditiis repellat assumenda rem ad obcaecati. Atque explicabo pariatur consectetur adipisci amet?
             </p>
-        </div>
+        </article>
 
         <ul>
             <li>
-                <img src="" alt="Thumbnail di Mario 1">
+                <img src="img/thumb-1.png" alt="Thumbnail di Mario 1">
             </li>
             <li>
-                <img src="" alt="Thumbnail di Mario 2">
+                <img src="img/thumb-2.png" alt="Thumbnail di Mario 2">
             </li>
         </ul>
-    </div>
+    </main>
 
-    <div>
+    <section class="signup">
         <h2>Registrati oggi!</h2>
 
         <p>
@@ -65,13 +70,13 @@
         <form>
             <input type="email" name="email" placeholder="Inserisci la tua email e premi invio" required>
         </form>
-    </div>
+    </section>
 
-    <div>
+    <footer>
         <p>
             Copyright 2025 Marioclub
         </p>
-    </div>
+    </footer>
     
 </body>
 </html>
